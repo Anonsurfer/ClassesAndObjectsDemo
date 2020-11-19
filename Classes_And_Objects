@@ -8,9 +8,10 @@ namespace MethodsAndClasses
             int x;
             Student_Data student1 = new Student_Data();
             Console.WriteLine("\t\t\t\t\tWelcome to my program ! ");
-            Console.WriteLine("1. To Enter The Data Of The Student: ");
+            Console.WriteLine("1. To Enter The Data Of The Student");
             Console.WriteLine("2. To Information");
             Console.WriteLine("3. To Help ");
+            Console.WriteLine("Enter your Choice 1/2/3");
             try
             {
                 x = Convert.ToInt32(Console.ReadLine());
@@ -27,6 +28,11 @@ namespace MethodsAndClasses
                 else if (x == 3)
                 {
                     student1.Help();
+                }
+                else 
+                {
+                Console.WriteLine("Sorry, We Didn't get you enter your choice again !");
+                Main();
                 }
             }
             catch (Exception ex)
